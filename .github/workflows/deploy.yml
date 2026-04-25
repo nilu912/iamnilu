@@ -40,6 +40,12 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
 
+      # Step E: Prepare the build folder for hosting
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
       # - name: Deploy to GitHub Pages (alternative)
       #   uses: JamesMGreene/github-pages-deploy-action@v4
       #   with:
