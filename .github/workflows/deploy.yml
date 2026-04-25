@@ -1,0 +1,48 @@
+name: React CI/CD Pipeline
+
+# 1. This tells the pipeline to run whenever you push to the 'main' branch
+on:
+push:
+  branches:
+    - main
+
+# 2. Grant permissions for GitHub Actions to write to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# 3. Define the steps the server will take
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 4. Check out the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 5. Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use the latest stable version of Node.js
+
+      # 6. Install dependencies and build the project
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+
+      # 7. Deploy to GitHub Pages using the official action
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+
+      # - name: Deploy to GitHub Pages (alternative)
+      #   uses: JamesMGreene/github-pages-deploy-action@v4
+      #   with:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     BRANCH: gh-pages
+      #     FOLDER: dist

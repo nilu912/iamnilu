@@ -55,7 +55,7 @@ const About = () => {
                     <div className='w-full h-full flex items-center justify-center text-secondary/30'>
                       {/* <span className='font-mono text-sm'>[ Your Photo ]</span> */}
                       <img 
-                        src="https://drive.google.com/file/d/12xuEO1mO-l_1aciPoaN1zHvmJLcaWuqS/view?usp=sharing"  
+                        src="https://github.com/nilu912/nilu-s_portfolio/blob/main/src/public/IMG20250720172747.png?raw=true"  
                         alt="Lexus" 
                         className="w-full h-full object-cover rounded"
                       />
