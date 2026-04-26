@@ -20,7 +20,7 @@ const About = () => {
               className='space-y-6'
             >
               <p className='text-lg leading-relaxed'>
-                Hello! My name is <span className='text-secondary'>Lexus</span>. My journey into tech hasn't been a straight line. 
+                Hello! My name is <span className='text-secondary'>Nilu</span>. My journey into tech hasn't been a straight line. 
                 After taking some time to figure out my path early in my education, I discovered a deep passion for computers. 
                 Starting my BCA in 2021 changed everything. I transformed into someone who loved uncovering how things work 
                 behind the scenes—diving into networking, fundamentals, and programming languages like C, C++, and Java.
@@ -56,7 +56,7 @@ const About = () => {
                       {/* <span className='font-mono text-sm'>[ Your Photo ]</span> */}
                       <img 
                         src="https://github.com/nilu912/nilu-s_portfolio/blob/main/src/public/IMG20250720172747.png?raw=true"  
-                        alt="Lexus" 
+                        alt="Nilu" 
                         className="w-full h-full object-cover rounded"
                       />
                     </div>
