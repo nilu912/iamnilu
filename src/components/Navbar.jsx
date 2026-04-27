@@ -120,7 +120,7 @@ const Navbar = () => {
             { id: 1, title: 'Linkedin', icon: <FaLinkedin size={25} />, color: 'bg-[#0077b5]', link: 'https://linkedin.com/in/nilu912' },
             { id: 2, title: 'Github', icon: <FaGithub size={25} />, color: 'bg-[#333]', link: 'https://github.com/nilu912' },
             { id: 3, title: 'Email', icon: <HiOutlineMail size={25} />, color: 'bg-[#6fc2b0]', link: 'mailto:panchalnilu91@gmail.com' },
-            { id: 4, title: 'Resume', icon: <BsFillPersonLinesFill size={25} />, color: 'bg-[#565f69]', link: '/resume.pdf' },
+            { id: 4, title: 'Resume', icon: <BsFillPersonLinesFill size={25} />, color: 'bg-[#565f69]', link: 'https://drive.google.com/file/d/1ZFoX_6p_2VpgF8PE4dG8XeGnfYf5KFtR/view?usp=drive_link' },
           ].map(({ id, title, icon, color, link }) => (
             <li key={id} className={`w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ${color} rounded-r-lg`}>
               <a 

@@ -3,19 +3,27 @@ import {
   FaHtml5, FaJsSquare, FaReact, FaNodeJs, FaGithub, FaDatabase, FaPython, FaJava, FaCube, FaLink 
 } from 'react-icons/fa';
 import { 
-  SiTypescript, SiSolidity, SiEthereum, SiIpfs, SiRust, SiExpress, SiMongodb, SiMysql 
+  SiTypescript, SiSolidity, SiEthereum, SiIpfs, SiRust, SiExpress, SiMongodb, SiMysql, 
+  SiSpring,
+  SiPostgresql,
+  SiFoundryvirtualtabletop,
+  SiCplusplus
 } from 'react-icons/si';
 import { motion } from 'framer-motion';
+import { BiSolidHardHat } from 'react-icons/bi';
+import { FaC } from 'react-icons/fa6';
 
 const Skills = () => {
   const skillCategories = [
     {
       title: 'Languages',
       skills: [
-        { name: 'JavaScript', icon: <FaJsSquare size={40} color='#f7df1e' /> },
         { name: 'Solidity', icon: <SiSolidity size={40} color='#e6e6e6' /> },
+        { name: 'C', icon: <FaC size={40} color='#b07219' /> },
+        { name: 'C++', icon: <SiCplusplus size={40} color='#b07219' /> },
+        { name: 'JavaScript', icon: <FaJsSquare size={40} color='#f7df1e' /> },
         { name: 'TypeScript', icon: <SiTypescript size={40} color='#3178c6' /> },
-        { name: 'Rust', icon: <SiRust size={40} color='#dea584' /> },
+        // { name: 'Rust', icon: <SiRust size={40} color='#dea584' /> },
         { name: 'Python', icon: <FaPython size={40} color='#3776ab' /> },
         { name: 'Java', icon: <FaJava size={40} color='#b07219' /> },
       ],
@@ -24,7 +32,8 @@ const Skills = () => {
       title: 'Blockchain & Web3',
       skills: [
         { name: 'Ethereum', icon: <SiEthereum size={40} color='#8c8c8c' /> },
-        { name: 'Hardhat & Foundry', icon: <FaCube size={40} color='#f4f4f4' /> },
+        { name: 'Hardhat', icon: <BiSolidHardHat size={40} color='#f4f4f4' /> },
+        { name: 'Foundry', icon: <SiFoundryvirtualtabletop size={40} color='#f4f4f4' /> },
         { name: 'Ethers.js / Web3.js', icon: <FaLink size={40} color='#4a90e2' /> },
         { name: 'IPFS', icon: <SiIpfs size={40} color='#65c2cb' /> },
       ],
@@ -36,6 +45,7 @@ const Skills = () => {
         { name: 'Node.js', icon: <FaNodeJs size={40} color='#339933' /> },
         { name: 'Express.js', icon: <SiExpress size={40} color='#ffffff' /> },
         { name: 'HTML/CSS', icon: <FaHtml5 size={40} color='#e34f26' /> },
+        { name: 'Spring Boot', icon: <SiSpring size={40} color='#61dafb' /> },
       ],
     },
     {
@@ -43,6 +53,7 @@ const Skills = () => {
       skills: [
         { name: 'MongoDB', icon: <SiMongodb size={40} color='#47a248' /> },
         { name: 'MySQL', icon: <SiMysql size={40} color='#4479a1' /> },
+        { name: 'PostgreSQL', icon: <SiPostgresql size={40} color='#4479a1' /> },
         { name: 'Git', icon: <FaGithub size={40} color='#ffffff' /> },
         { name: 'Cryptography', icon: <FaDatabase size={40} color='#a0aec0' /> },
       ],

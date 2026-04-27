@@ -6,6 +6,15 @@ const Work = () => {
   const projects = [
     {
       id: 1,
+      title: 'Blockchain-based Voting System',
+      description: 'A decentralized e-voting application utilizing Solidity smart contracts for immutable election records. Includes 2-step authentication and real-time cryptographic tracking.',
+      tech: ['Solidity', 'ReactJS', 'Ethers.js', 'MongoDB'],
+      github: 'https://github.com/nilu912/blockchain-voting-system',
+      demo: '#',
+      image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'
+    },
+    {
+      id: 2,
       title: 'Blockchain Password Manager',
       description: 'A decentralized password manager leveraging a "Trust No One" architecture. Implements local AES encryption before deploying hashes to the Ethereum blockchain for mathematical security.',
       tech: ['ReactJS', 'Solidity', 'Hardhat', 'Ethers.js'],
@@ -14,22 +23,13 @@ const Work = () => {
       image: 'https://images.unsplash.com/photo-1639762681485-074b7f4ec651?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Apang Seva Kendra Web Portal',
       description: 'A full-stack MERN web application for a non-profit organization serving disabled individuals. Features a highly accessible, responsive UI to streamline resource allocation.',
       tech: ['MongoDB', 'Express.js', 'ReactJS', 'Node.js'],
       github: '#',
       demo: 'https://apangsevakendrasangli.org',
       image: 'https://images.unsplash.com/photo-1559027615-cd4628ce27df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'
-    },
-    {
-      id: 3,
-      title: 'Blockchain-based Voting System',
-      description: 'A decentralized e-voting application utilizing Solidity smart contracts for immutable election records. Includes 2-step authentication and real-time cryptographic tracking.',
-      tech: ['Solidity', 'ReactJS', 'Ethers.js', 'MongoDB'],
-      github: 'https://github.com/nilu912/blockchain-voting-system',
-      demo: '#',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'
     },
     {
       id: 4,
